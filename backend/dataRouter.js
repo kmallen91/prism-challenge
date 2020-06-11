@@ -20,3 +20,5 @@ router.get('/info', (req, res) => {
             res.status(500).json({message: 'error getting info objects'})
         })
 })
+
+module.exports = router
