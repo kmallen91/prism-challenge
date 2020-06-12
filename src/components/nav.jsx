@@ -8,7 +8,7 @@ export default function Navbar() {
     return (
         <div className='nav-container'>
             <ul className='nav-list'>
-                <li> <img className='logo' src={logo} alt='datatonic logo' /></li>
+                <li className='logo'> <img className='logo-image'  src={logo} alt='datatonic logo' /></li>
                 <li className='list-item'> Dashboard </li>
                 <li className='list-item'> Sources </li>
                 <li className='list-item'> Inspector </li>
