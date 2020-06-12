@@ -36,7 +36,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Overview />
-      <OverviewData sources = {sources} />
+      <OverviewData sources = {sources} info={info} />
     </div>
   );
 }
