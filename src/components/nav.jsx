@@ -9,12 +9,12 @@ export default function Navbar() {
         <div className='nav-container'>
             <ul className='nav-list'>
                 <li> <img className='logo' src={logo} alt='datatonic logo' /></li>
-                <li className='nav-item'> Dashboard </li>
-                <li className='nav-item'> Sources </li>
-                <li className='nav-item'> Inspector </li>
-                <li className='nav-item'> Ingestion </li>
+                <li className='list-item'> Dashboard </li>
+                <li className='list-item'> Sources </li>
+                <li className='list-item'> Inspector </li>
+                <li className='list-item'> Ingestion </li>
             </ul>
-            
+            <div className='nav-item'>User001</div>
         </div>
     )
 }
