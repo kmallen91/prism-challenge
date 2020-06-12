@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'Avenir Next';
   src: local('Avenir Next Bold'), local('Avenir-Next-Bold'),
-      url('AvenirNextCyr-Bold.woff2') format('woff2'),
-      url('AvenirNextCyr-Bold.woff') format('woff'),
-      url('AvenirNextCyr-Bold.ttf') format('truetype');
+      url('/src/styles/AvenirNextCyr-Bold.woff2') format('woff2'),
+      url('/src/styles/AvenirNextCyr-Bold.woff') format('woff'),
+      url('/src/styles/AvenirNextCyr-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 body {
-  margin-right: 1rem;
+  margin-right: 0rem;
   font-family: 'Avenir Next',
     sans-serif;
   -webkit-font-smoothing: antialiased;

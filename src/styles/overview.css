@@ -1,0 +1,17 @@
+.overview-container{
+    margin: 0rem 7rem 0rem 7rem;
+    padding: 2rem 0rem 0.4rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: solid rgba(128, 128, 128, 0.39) 1px;
+}
+
+.overview{
+    font-size: 1.75rem;
+    color:rgba(0, 0, 0, 0.678);
+}
+
+.scan {
+    font-size: 0.82rem;
+}

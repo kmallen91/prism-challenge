@@ -2,14 +2,16 @@ import React from 'react';
 
 // Components
 import Navbar from './components/nav'
+import Overview from './components/overview'
 
 // Styles
-import './App.css';
+import './styles/App.css';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+      <Overview />
     </div>
   );
 }
