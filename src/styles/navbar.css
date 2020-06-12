@@ -1,0 +1,25 @@
+.nav-container {
+    display:flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display:flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item{
+    color:black;
+    font-size: 1rem;
+    text-decoration: none;
+    padding:0.65rem;
+    
+}
+
+.logo {
+
+    height: 70%;
+    width: 60%;
+}
