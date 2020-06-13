@@ -18,11 +18,11 @@ const MyResponsiveBar = (props) => (
         axisRight={null}
         axisBottom={{
             tickSize: 5,
-            tickPadding: 5,
+            tickPadding: 3,
             tickRotation: 0,
-            legend: 'Sensitive Info Type',
+            legend: '(Sensitive Info Type)',
             legendPosition: 'middle',
-            legendOffset: 32
+            legendOffset: 45
         }}
         axisLeft={{
             tickSize: 5,
@@ -43,7 +43,7 @@ const MyResponsiveBar = (props) => (
                 direction: 'row',
                 justify: false,
                 translateX: 54,
-                translateY: 54,
+                translateY: 40,
                 itemsSpacing: 0,
                 itemWidth: 82,
                 itemHeight: 20,

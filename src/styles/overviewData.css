@@ -3,3 +3,13 @@
     justify-content: space-evenly;
     padding: 2rem 0rem 2rem 0rem;
 }
+
+.issues-container{
+    color: rgba(0, 0, 0, 0.64);
+}
+.inspection-container{
+    color: rgba(0, 0, 0, 0.64);
+}
+.locations-container{
+    color: rgba(0, 0, 0, 0.64);
+}
