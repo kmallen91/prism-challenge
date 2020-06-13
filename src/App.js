@@ -105,7 +105,7 @@ function App() {
       <div className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={8} s={6}>
-          <DataDistribution sources={sources} info={info} />          
+          <DataDistribution sources={sources} info={info} ds1={ds1} ds2={ds2} ds3={ds3} ds4={ds4} ds5={ds5} ds6={ds6}/>          
         </Grid>
         <Grid item xs={12} sm={4}>
           <Paper className={classes.paper}>notifications</Paper>
