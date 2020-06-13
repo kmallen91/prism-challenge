@@ -49,49 +49,48 @@ function App() {
       .catch(err => console.log('error from info get', err))
     }, [])
 
-  const ds1 = {'count':0}
-  const ds2 = {'count':0}
-  const ds3 = {'count':0}
-  const ds4 = {'count':0}
-  const ds5 = {'count':0}
-  const ds6 = {'count':0}
+  const ds1 = {}
+  const ds2 = {}
+  const ds3 = {}
+  const ds4 = {}
+  const ds5 = {}
+  const ds6 = {}
 
   if (info){
     console.log('ds1', ds1, ds2)
     info.forEach(item => {
       if (item.source_id === 1) {
-        ds1['count'] += item.count 
         ds1[item.type] ? ds1[item.type]++ : ds1[item.type] = 1
         ds1[item.category] ? ds1[item.category]++ : ds1[item.category] = 1
+        ds1['count'] ? ds1['count'] += item.count : ds1['count'] = item.count
       }
       else if (item.source_id === 2) {
-        ds2['count'] += item.count
         ds2[item.type] ? ds2[item.type]++ : ds2[item.type] = 1
         ds2[item.category] ? ds2[item.category]++ : ds2[item.category] = 1
+        ds2['count'] ? ds2['count'] += item.count : ds2['count'] = item.count
       }
       else if (item.source_id === 3) {
-        ds3['count'] += item.count 
         ds3[item.type] ? ds3[item.type]++ : ds3[item.type] = 1
         ds3[item.category] ? ds3[item.category]++ : ds3[item.category] = 1
+        ds3['count'] ? ds3['count'] += item.count : ds3['count'] = item.count
       }
       else if (item.source_id === 4) {
-        ds4['count'] += item.count
         ds4[item.type] ? ds4[item.type]++ : ds4[item.type] = 1
         ds4[item.category] ? ds4[item.category]++ : ds4[item.category] = 1
+        ds4['count'] ? ds4['count'] += item.count : ds4['count'] = item.count
       }
       else if (item.source_id === 5) {
-        ds5['count'] += item.count
         ds5[item.type] ? ds5[item.type]++ : ds5[item.type] = 1
         ds5[item.category] ? ds5[item.category]++ : ds5[item.category] = 1
+        ds5['count'] ? ds5['count'] += item.count : ds5['count'] = item.count
       }
       else if (item.source_id === 6) {
-        ds6['count'] += item.count
         ds6[item.type] ? ds6[item.type]++ : ds6[item.type] = 1
         ds6[item.category] ? ds6[item.category]++ : ds6[item.category] = 1
+        ds6['count'] ? ds6['count'] += item.count : ds6['count'] = item.count
       }
     })
-      }
-  
+      } 
   
   
     
