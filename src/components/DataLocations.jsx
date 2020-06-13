@@ -8,7 +8,7 @@ export default function DataLocations(props) {
     let tables = 0
 
     if (props.info){
-        console.log(props.info[0].location === 'file')
+        
         props.info.forEach(item => {
             if (item.location === 'file'){
                return files += 1

@@ -1,19 +1,12 @@
 import React from 'react'
 import '../styles/overviewData.css'
-import { useEffect } from 'react'
 import CoverageReducer from './coverage'
 import DataLocations from './DataLocations'
 
 export default function OverviewData(props) {
 
     const {sources, info} = props
-    if (sources){
-        console.log('sources', sources)
-    }
-    if (info){
-        console.log('info', info)
-    }   
-
+    
     return (
         <div className='overview-data-container'>
             <div className='issues-container'>Security Issues Resolved <br/> {sources  ? sources.reduce((acc, source) => {return source.resolved + acc}, 0) : (<h4>Loading..</h4>)} </div>
