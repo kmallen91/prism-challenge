@@ -1,10 +1,12 @@
 import React from 'react'
 import { ResponsiveBar } from '@nivo/bar'
+
 // make sure parent container have a defined height when using
 // responsive component, otherwise height will be 0 and
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
+
 const MyResponsiveBar = (props) => (
     <ResponsiveBar
         data={props.data}
@@ -12,7 +14,7 @@ const MyResponsiveBar = (props) => (
         indexBy="data_source"
         margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
         padding={0.7}
-        colors={{ scheme: 'paired' }}       
+        colors={{ scheme: 'dark2' }}       
         borderColor={{ from: 'color', modifiers: [ [ 'darker', '1.4' ] ] }}
         axisTop={null}
         axisRight={null}

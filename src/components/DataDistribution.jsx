@@ -4,8 +4,7 @@ import '../styles/datadistribution.css'
   
   
 export default function DataDistribution(props) {
-    const {ds1, ds2, ds3, ds4, ds5, ds6} = props 
-    const data = [ds1, ds2, ds3, ds4, ds5, ds6]
+    const {data} = props 
     console.log('data from distrib', data)
 
     return (

@@ -1,17 +1,11 @@
 .stacked-graph-container{
     margin: 0rem 7rem 0rem 7rem;
     width:80%;
-    padding: 2rem 0rem 3rem 0rem;
+    padding: 2rem 0rem 2rem 0rem;
     height:75%;
     border: solid rgba(128, 128, 128, 0.151) 1px;
 }
 
-.stacked-graph{
-    /* padding: 3rem 0rem 0rem 0rem;
-    height: 50% !important; 
-    width: 100% !important; */
-    
-}
 .stacked-graph-title{
     font-size: 1.2rem;
     color:rgba(0, 0, 0, 0.678);
@@ -19,4 +13,11 @@
     padding: 0rem 0rem 0rem 2rem;
     text-align: left;
     margin: auto 0;
+}
+
+.stacked-graph{
+    /* padding: 3rem 0rem 0rem 0rem;
+    height: 50% !important; 
+    width: 100% !important; */
+    
 }

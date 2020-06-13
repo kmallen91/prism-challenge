@@ -10,6 +10,7 @@ import Navbar from './components/nav'
 import Overview from './components/overview'
 import OverviewData from './components/overview-data'
 import DataDistribution from './components/DataDistribution'
+import InfoType from './components/InfoType'
 
 // Styles
 import './styles/App.css';
@@ -49,12 +50,12 @@ function App() {
       .catch(err => console.log('error from info get', err))
     }, [])
 
-  const ds1 = {'data_source':1}
-  const ds2 = {'data_source':2}
-  const ds3 = {'data_source':3}
-  const ds4 = {'data_source':4}
-  const ds5 = {'data_source':5}
-  const ds6 = {'data_source':6}
+  const ds1 = {'data_source':'DS1'}
+  const ds2 = {'data_source':'DS2'}
+  const ds3 = {'data_source':'DS3'}
+  const ds4 = {'data_source':'DS4'}
+  const ds5 = {'data_source':'DS5'}
+  const ds6 = {'data_source':'DS6'}
 
   if (info){
     console.log('ds1', ds1, ds2)
@@ -91,41 +92,44 @@ function App() {
       }
     })
       }  
-                   
+        
+    const data = [ds1, ds2, ds3, ds4, ds5, ds6]
 
   return (
     <div className="App">
       <Navbar />
-      <Overview />
-      <OverviewData sources = {sources} info={info} />
-      <div className={classes.root}>
-      <Grid container spacing={4}>
-        <Grid item xs={8} s={6}>
-          <DataDistribution sources={sources} info={info} ds1={ds1} ds2={ds2} ds3={ds3} ds4={ds4} ds5={ds5} ds6={ds6}/>          
+      <div className='body-container'>
+        <Overview />
+        <OverviewData sources = {sources} info={info} />
+        <div className={classes.root}>
+        <Grid container spacing={2}>
+          <Grid item xs={8} s={6}>
+            <DataDistribution sources={sources} info={info} data={data}/>          
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Paper className={classes.paper}>notifications</Paper>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <InfoType data={data} info={info} />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Paper className={classes.paper}>category ring graph</Paper>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Paper className={classes.paper}>inspection coverage horizontal</Paper>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Paper className={classes.paper}>count types horizontal</Paper>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Paper className={classes.paper}>count categories horizontal</Paper>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Paper className={classes.paper}>record count</Paper>
+          </Grid>
         </Grid>
-        <Grid item xs={12} sm={4}>
-          <Paper className={classes.paper}>notifications</Paper>
-        </Grid>
-        <Grid item xs={12} sm={4}>
-          <Paper className={classes.paper}>type ring graph</Paper>
-        </Grid>
-        <Grid item xs={12} sm={4}>
-          <Paper className={classes.paper}>category ring graph</Paper>
-        </Grid>
-        <Grid item xs={12} sm={4}>
-          <Paper className={classes.paper}>inspection coverage horizontal</Paper>
-        </Grid>
-        <Grid item xs={12} sm={4}>
-          <Paper className={classes.paper}>count types horizontal</Paper>
-        </Grid>
-        <Grid item xs={12} sm={4}>
-          <Paper className={classes.paper}>count categories horizontal</Paper>
-        </Grid>
-        <Grid item xs={12} sm={4}>
-          <Paper className={classes.paper}>record count</Paper>
-        </Grid>
-      </Grid>
-    </div>
+        </div>
+      </div>
     </div>
   );
 }
