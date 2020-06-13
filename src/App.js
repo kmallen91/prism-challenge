@@ -42,19 +42,19 @@ function App() {
       .catch(err => console.log('error from sources get', err))
     }, [])
     
-    useEffect(() => {
+  useEffect(() => {
       axios 
       .get('https://prism-challenge-backend.herokuapp.com/data/info')
       .then(res => setInfo(res.data))
       .catch(err => console.log('error from info get', err))
     }, [])
 
-  const ds1 = {}
-  const ds2 = {}
-  const ds3 = {}
-  const ds4 = {}
-  const ds5 = {}
-  const ds6 = {}
+  const ds1 = {'data_source':1}
+  const ds2 = {'data_source':2}
+  const ds3 = {'data_source':3}
+  const ds4 = {'data_source':4}
+  const ds5 = {'data_source':5}
+  const ds6 = {'data_source':6}
 
   if (info){
     console.log('ds1', ds1, ds2)
@@ -90,10 +90,7 @@ function App() {
         ds6['count'] ? ds6['count'] += item.count : ds6['count'] = item.count
       }
     })
-      } 
-  
-  
-    
+      }  
                    
 
   return (
@@ -102,7 +99,7 @@ function App() {
       <Overview />
       <OverviewData sources = {sources} info={info} />
       <div className={classes.root}>
-      <Grid container spacing={3}>
+      <Grid container spacing={4}>
         <Grid item xs={8} s={6}>
           <DataDistribution sources={sources} info={info} ds1={ds1} ds2={ds2} ds3={ds3} ds4={ds4} ds5={ds5} ds6={ds6}/>          
         </Grid>
