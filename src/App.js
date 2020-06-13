@@ -11,6 +11,7 @@ import Overview from './components/overview'
 import OverviewData from './components/overview-data'
 import DataDistribution from './components/DataDistribution'
 import InfoType from './components/InfoType'
+import CategoryType from './components/CategoryType'
 
 // Styles
 import './styles/App.css';
@@ -113,7 +114,7 @@ function App() {
             <InfoType data={data} info={info} />
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Paper className={classes.paper}>category ring graph</Paper>
+            <CategoryType data={data} info={info} />
           </Grid>
           <Grid item xs={12} sm={4}>
             <Paper className={classes.paper}>inspection coverage horizontal</Paper>

@@ -1,21 +1,21 @@
 import React from 'react'
 import MyResponsivePie from './InfoTypePie'
-import '../styles/infotype.css'
+import '../styles/categoryType.css'
   
   
-export default function InfoType(props) {
+export default function CategoryType(props) {
     const {data, info} = props 
 
     const infoType = {
-        'swift':'',
-        'email':'',
-        'bank-account':'',
-        'phone':'',
-        'ssn':'',
-        'aba':'',
-        'passport':'',
-        'dob':'',
-        'credit-card':'',
+        'PII':'',
+        'HIPAA':'',
+        'PCI':'',
+        'FERPA':'',
+        'Class7':'',
+        'Class6':'',
+        'Class5':'',
+        'Class4':'',
+        'Class3':'',
     }
     const sourceDataKeys = Object.keys(data[0])
     
@@ -42,9 +42,9 @@ export default function InfoType(props) {
 
 
     return (
-        <div className='info-type-container'>
-            <h2 className='info-type-title'>Sensitive Info by Type</h2>
-            <h4 className='info-type-subtitle'>Sensitive Info by Type</h4>
+        <div className='category-type-container'>
+            <h2 className='category-type-title'>Sensitive Category by Type</h2>
+            <h4 className='category-type-subtitle'>Sensitive Category by Type</h4>
             <MyResponsivePie data={pieChartObject}/>
         </div>
     )

@@ -11,7 +11,6 @@ import MyResponsiveBar from './ResponsiveBar'
 const MyResponsivePie = (props) => (
     <ResponsivePie
         data={props.data}
-        keys={['swift', 'email', 'bank-account', 'phone', 'ssn', 'passport', 'aba', 'dob', 'credit-card']}
         margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
         innerRadius={0.65}
         padAngle={0.7}
