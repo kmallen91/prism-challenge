@@ -5,14 +5,13 @@ import { ResponsiveBar } from '@nivo/bar'
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
-const HorizontalCount = (props) => (
+const HorizontalRecordCount = (props) => (
     <ResponsiveBar
         data={props.data}
-        keys={[ 'type-count' ]}
+        keys={[ 'count' ]}
         indexBy="data_source"
         margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
         padding={0.5}
-        maxValue={15}
         layout="horizontal"
         colors={{ scheme: 'category10' }}        
         borderColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
@@ -22,7 +21,7 @@ const HorizontalCount = (props) => (
             tickSize: 0,
             tickPadding: 5,
             tickRotation: 0,
-            legend: '(Count of Unique Sensitive Info Types )',
+            legend: '(Inspection Coverage (%) )',
             legendPosition: 'middle',
             legendOffset: 32
         }}
@@ -46,4 +45,4 @@ const HorizontalCount = (props) => (
     />
 )
 
-export default HorizontalCount
+export default HorizontalRecordCount

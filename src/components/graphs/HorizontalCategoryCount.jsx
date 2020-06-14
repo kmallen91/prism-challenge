@@ -14,7 +14,7 @@ const HorizontalCategoryCount = (props) => (
         padding={0.5}
         maxValue={15}
         layout="horizontal"
-        colors={{ scheme: 'dark2' }}        
+        colors={{ scheme: 'category10' }}        
         borderColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
         axisTop={null}
         axisRight={null}

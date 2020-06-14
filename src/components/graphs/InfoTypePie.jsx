@@ -13,7 +13,7 @@ const MyResponsivePie = (props) => (
         margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
         innerRadius={0.65}
         padAngle={0.7}
-        cornerRadius={3}
+        cornerRadius={0}
         colors={{ scheme: 'set1' }}
         borderWidth={1}
         borderColor={{ from: 'color', modifiers: [ [ 'darker', 0.2 ] ] }}

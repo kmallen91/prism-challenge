@@ -1,5 +1,5 @@
 import React from 'react'
-import HorizontalCategoryCount from '../graphs/HorizontalCategoryCount'
+import HorizontalRecordCount from '../graphs/HorizontalRecordCount'
 import '../../styles/smallChart.css'  
   
 export default function InfoType(props) {
@@ -13,9 +13,9 @@ export default function InfoType(props) {
 
     return (
         <div className='small-chart-container'>
-            <h2 className='small-chart-title'>Sensitive Info by Category</h2>
+            <h2 className='small-chart-title'>Sensitive Data Record Count</h2>
             <h4 className='small-chart-subtitle'>(By Data Sources)</h4>
-            <HorizontalCategoryCount data={dataObj}/>
+            <HorizontalRecordCount data={dataObj}/>
         </div>
     )
 }

@@ -1,8 +1,8 @@
 .small-chart-container{
-    margin: 0rem 7rem 0rem 7rem;
-    width:100%;
+    margin: 0rem 3rem 0rem 3rem;
+    width:90%;
     padding: 2rem 0rem 3rem 0rem;
-    height:65%;
+    height:66%;
     border: solid rgba(128, 128, 128, 0.151) 1px;
 }
 
@@ -13,4 +13,10 @@
     padding: 0rem 0rem 0rem 2rem;
     text-align: left;
     margin: auto 0;
+}
+
+.small-chart-subtitle {
+    font-size: .7rem;
+    text-align:left;
+    padding: 0 0 0 2rem;
 }

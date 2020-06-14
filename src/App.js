@@ -15,6 +15,7 @@ import CategoryType from './components/small-charts-components/CategoryType'
 import CoverageChart from './components/small-charts-components/CoverageChart'
 import TypeCount from './components/small-charts-components/TypeCount'
 import CategoryCount from './components/small-charts-components/CategoryCount'
+import RecordCount from './components/small-charts-components/RecordCount'
 
 // Styles
 import './styles/App.css';
@@ -97,7 +98,7 @@ function App() {
       }  
         
     const data = [ds1, ds2, ds3, ds4, ds5, ds6]
-    console.log('sources from APP', sources)
+
 
   return (
     <div className="App">
@@ -129,7 +130,7 @@ function App() {
             <CategoryCount data ={data}/>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Paper className={classes.paper}>record count</Paper>
+            <RecordCount data={data}/>
           </Grid>
         </Grid>
         </div>

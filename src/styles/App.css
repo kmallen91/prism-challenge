@@ -10,7 +10,11 @@
 }
 
 .body-container{
-  margin: 0 10% 0 10%;
+  margin: 0 20% 0 20%;
+}
+
+.MuiGrid-grid-sm-4{
+  justify-content:center;
 }
 
 
