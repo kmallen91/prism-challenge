@@ -6,16 +6,16 @@ import { ResponsiveBar } from '@nivo/bar'
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
-const HorizontalGraph = ({ data /* see data tab */ }) => (
+const HorizontalGraph = (props) => (
     <ResponsiveBar
-        data={data}
+        data={props.data}
         keys={[ 'coverage-percentage' ]}
-        indexBy="data_source"
+        indexBy="name"
         margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
         padding={0.5}
-        maxValue={1000}
+        maxValue={50}
         layout="horizontal"
-        colors={{ scheme: 'blues' }}        
+        colors={{ scheme: 'dark2' }}        
         borderColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
         axisTop={null}
         axisRight={null}
@@ -41,7 +41,7 @@ const HorizontalGraph = ({ data /* see data tab */ }) => (
         labelTextColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
         legends={[]}
         isInteractive={false}
-        animate={true}
+        animate={false}
         motionStiffness={90}
         motionDamping={15}
     />

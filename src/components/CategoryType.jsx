@@ -1,5 +1,5 @@
 import React from 'react'
-import MyResponsivePie from './InfoTypePie'
+import MyResponsivePie from './graphs/InfoTypePie'
 import '../styles/categoryType.css'
   
   
@@ -42,7 +42,7 @@ export default function CategoryType(props) {
     return (
         <div className='category-type-container'>
             <h2 className='category-type-title'>Sensitive Info by Category</h2>
-            <h4 className='category-type-subtitle'>Sensitive Info by Category</h4>
+            <h4 className='category-type-subtitle'>Count of Data Sources</h4>
             <MyResponsivePie data={pieChartObject}/>
         </div>
     )

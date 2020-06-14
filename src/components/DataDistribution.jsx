@@ -1,5 +1,5 @@
 import React from 'react'
-import MyResponsiveBar from './ResponsiveBar'
+import MyResponsiveBar from './graphs/ResponsiveBar'
 import '../styles/datadistribution.css'
   
   

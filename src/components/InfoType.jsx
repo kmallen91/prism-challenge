@@ -1,5 +1,5 @@
 import React from 'react'
-import MyResponsivePie from './InfoTypePie'
+import MyResponsivePie from './graphs/InfoTypePie'
 import '../styles/infotype.css'
   
   
@@ -41,7 +41,7 @@ export default function InfoType(props) {
     return (
         <div className='info-type-container'>
             <h2 className='info-type-title'>Sensitive Info by Type</h2>
-            <h4 className='info-type-subtitle'>Sensitive Info by Type</h4>
+            <h4 className='info-type-subtitle'>Count of Data Sources</h4>
             <MyResponsivePie data={pieChartObject}/>
         </div>
     )
