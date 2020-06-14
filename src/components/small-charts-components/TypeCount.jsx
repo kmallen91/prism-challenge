@@ -8,8 +8,8 @@ export default function InfoType(props) {
     const {data} = props 
 
     if(data) {
-        data.forEach((item, i) => {
-            data[i]['type-count'] = 8
+        data.map((item, i) => {
+            data[i]['type-count'] = i+2
         })        
     }
 

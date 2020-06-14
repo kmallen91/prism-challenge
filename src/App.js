@@ -14,6 +14,7 @@ import InfoType from './components/small-charts-components/InfoType'
 import CategoryType from './components/small-charts-components/CategoryType'
 import CoverageChart from './components/small-charts-components/CoverageChart'
 import TypeCount from './components/small-charts-components/TypeCount'
+import CategoryCount from './components/small-charts-components/CategoryCount'
 
 // Styles
 import './styles/App.css';
@@ -125,7 +126,7 @@ function App() {
             <TypeCount data={data}/>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Paper className={classes.paper}>count categories horizontal</Paper>
+            <CategoryCount data ={data}/>
           </Grid>
           <Grid item xs={12} sm={4}>
             <Paper className={classes.paper}>record count</Paper>
