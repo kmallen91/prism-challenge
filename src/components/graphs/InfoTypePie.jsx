@@ -14,14 +14,14 @@ const MyResponsivePie = (props) => (
         innerRadius={0.65}
         padAngle={0.7}
         cornerRadius={0}
-        colors={{ scheme: 'set1' }}
+        colors={{ scheme: 'set3' }}
         borderWidth={1}
         borderColor={{ from: 'color', modifiers: [ [ 'darker', 0.2 ] ] }}
         radialLabel={function(e){return e.id+": "+e.value}}
         radialLabelsSkipAngle={10}
         radialLabelsTextXOffset={6}
         radialLabelsTextColor="#333333"
-        radialLabelsLinkOffset={0}
+        radialLabelsLinkOffset={-8}
         radialLabelsLinkDiagonalLength={16}
         radialLabelsLinkHorizontalLength={24}
         radialLabelsLinkStrokeWidth={1}

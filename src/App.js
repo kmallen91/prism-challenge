@@ -19,6 +19,7 @@ import RecordCount from './components/small-charts-components/RecordCount'
 
 // Styles
 import './styles/App.css';
+import './styles/notifications.css'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -106,33 +107,33 @@ function App() {
       <div className='body-container'>
         <Overview />
         <OverviewData sources = {sources} info={info} />
-        <div className={classes.root}>
-        <Grid container spacing={2}>
-          <Grid item xs={8} s={6}>
+        <div className='body-content-container'>
+        
+          
             <DataDistribution sources={sources} info={info} data={data}/>          
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Paper className={classes.paper}>notifications</Paper>
-          </Grid>
-          <Grid item xs={12} sm={4}>
+          
+          
+            <div className='notifications-container'>notifications</div>
+          
+          
             <InfoType data={data} info={info} />
-          </Grid>
-          <Grid item xs={12} sm={4}>
+          
+          
             <CategoryType data={data} info={info} />
-          </Grid>
-          <Grid item xs={12} sm={4}>
+          
+          
             <CoverageChart sources={sources}/>
-          </Grid>
-          <Grid item xs={12} sm={4}>
+          
+          
             <TypeCount data={data}/>
-          </Grid>
-          <Grid item xs={12} sm={4}>
+          
+          
             <CategoryCount data ={data}/>
-          </Grid>
-          <Grid item xs={12} sm={4}>
+          
+          
             <RecordCount data={data}/>
-          </Grid>
-        </Grid>
+          
+        
         </div>
       </div>
     </div>

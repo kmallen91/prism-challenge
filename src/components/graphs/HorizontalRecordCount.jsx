@@ -34,9 +34,10 @@ const HorizontalRecordCount = (props) => (
             legendOffset: -40
         }}
         enableLabel={false}
+        // gridYValues={[0, 45000, 90000]}
         labelSkipWidth={12}
         labelSkipHeight={12}
-        labelTextColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}
+        labelTextColor={{ from: 'color', modifiers: [ [ 'darker', 0 ] ] }}
         legends={[]}
         isInteractive={false}
         animate={false}

@@ -1,0 +1,8 @@
+.notifications-container{
+    background-color: white;
+    margin: 1rem 1rem 1rem 1rem;
+    width:25%;
+    padding: 2rem 0rem 5rem 0rem;
+    height:18rem;
+    border: solid rgba(128, 128, 128, 0.151) 1px;
+}
