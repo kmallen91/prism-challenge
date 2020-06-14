@@ -4,7 +4,7 @@ import '../styles/categoryType.css'
   
   
 export default function CategoryType(props) {
-    const {data, info} = props 
+    const {data} = props 
 
     const infoType = {
         'PII':'',
@@ -21,8 +21,6 @@ export default function CategoryType(props) {
     
 
     if(data) {
-        console.log('data from type pie', data[0])
-        console.log('sourceDataKeys', sourceDataKeys, infoType)
         sourceDataKeys.filter(item => {
           if (item in infoType) {
               infoType[item] = data[0][item]
@@ -34,17 +32,17 @@ export default function CategoryType(props) {
     const pieDataValues = Object.values(infoType)
      
     const pieChartObject = pieDataKeys.map((key, i) => {
-       return {'id':key, 'value':pieDataValues[i]}
+       return {'id':key, 'value': parseInt(pieDataValues[i], 10)}
         
     })
 
-    console.log(pieChartObject)
+    
 
 
     return (
         <div className='category-type-container'>
-            <h2 className='category-type-title'>Sensitive Category by Type</h2>
-            <h4 className='category-type-subtitle'>Sensitive Category by Type</h4>
+            <h2 className='category-type-title'>Sensitive Info by Category</h2>
+            <h4 className='category-type-subtitle'>Sensitive Info by Category</h4>
             <MyResponsivePie data={pieChartObject}/>
         </div>
     )

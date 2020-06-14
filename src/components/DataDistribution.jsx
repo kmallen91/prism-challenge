@@ -1,11 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 import MyResponsiveBar from './ResponsiveBar'
 import '../styles/datadistribution.css'
   
   
 export default function DataDistribution(props) {
     const {data} = props 
-    console.log('data from distrib', data)
 
     return (
         <div className='stacked-graph-container'>

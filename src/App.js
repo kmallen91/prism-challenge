@@ -12,6 +12,7 @@ import OverviewData from './components/overview-data'
 import DataDistribution from './components/DataDistribution'
 import InfoType from './components/InfoType'
 import CategoryType from './components/CategoryType'
+import CoverageChart from './components/CoverageChart'
 
 // Styles
 import './styles/App.css';
@@ -59,7 +60,6 @@ function App() {
   const ds6 = {'data_source':'DS6'}
 
   if (info){
-    console.log('ds1', ds1, ds2)
     info.forEach(item => {
       if (item.source_id === 1) {
         ds1[item.type] ? ds1[item.type]++ : ds1[item.type] = 1
@@ -95,6 +95,7 @@ function App() {
       }  
         
     const data = [ds1, ds2, ds3, ds4, ds5, ds6]
+    console.log('sources from APP', sources)
 
   return (
     <div className="App">
@@ -117,7 +118,7 @@ function App() {
             <CategoryType data={data} info={info} />
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Paper className={classes.paper}>inspection coverage horizontal</Paper>
+            <CoverageChart sources={sources}/>
           </Grid>
           <Grid item xs={12} sm={4}>
             <Paper className={classes.paper}>count types horizontal</Paper>

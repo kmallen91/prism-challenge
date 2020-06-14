@@ -1,0 +1,16 @@
+.coverage-chart-container{
+    margin: 0rem 7rem 0rem 7rem;
+    width:100%;
+    padding: 2rem 0rem 3rem 0rem;
+    height:65%;
+    border: solid rgba(128, 128, 128, 0.151) 1px;
+}
+
+.coverage-chart-title{
+    font-size: 1.2rem;
+    color:rgba(0, 0, 0, 0.678);
+    width: 75%;
+    padding: 0rem 0rem 0rem 2rem;
+    text-align: left;
+    margin: auto 0;
+}
