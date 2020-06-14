@@ -1,12 +1,12 @@
 import React from 'react'
-import MyResponsivePie from './graphs/InfoTypePie'
-import '../styles/categoryType.css'
+import MyResponsivePie from '../graphs/InfoTypePie'
+import '../../styles/smallChart.css'
   
   
 export default function CategoryType(props) {
     const {data} = props 
 
-    const infoType = {
+    const infoCategory = {
         'PII':'',
         'HIPAA':'',
         'PCI':'',
@@ -17,32 +17,29 @@ export default function CategoryType(props) {
         'Class4':'',
         'Class3':'',
     }
-    const sourceDataKeys = Object.keys(data[0])
     
-
+    const sourceDataKeys = Object.keys(data[0])
     if(data) {
         sourceDataKeys.filter(item => {
-          if (item in infoType) {
-              infoType[item] = data[0][item]
+          if (item in infoCategory) {
+              infoCategory[item] = data[0][item]
           }           
         })
     }
 
-    const pieDataKeys = Object.keys(infoType)
-    const pieDataValues = Object.values(infoType)
+    const pieDataKeys = Object.keys(infoCategory)
+    const pieDataValues = Object.values(infoCategory)
      
     const pieChartObject = pieDataKeys.map((key, i) => {
        return {'id':key, 'value': parseInt(pieDataValues[i], 10)}
         
-    })
-
-    
+    })   
 
 
     return (
-        <div className='category-type-container'>
-            <h2 className='category-type-title'>Sensitive Info by Category</h2>
-            <h4 className='category-type-subtitle'>Count of Data Sources</h4>
+        <div className='small-chart-container'>
+            <h2 className='small-chart-title'>Sensitive Info by Category</h2>
+            <h4 className='small-chart-subtitle'>Count of Data Sources</h4>
             <MyResponsivePie data={pieChartObject}/>
         </div>
     )

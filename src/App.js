@@ -10,9 +10,10 @@ import Navbar from './components/nav'
 import Overview from './components/overview'
 import OverviewData from './components/overview-data'
 import DataDistribution from './components/DataDistribution'
-import InfoType from './components/InfoType'
-import CategoryType from './components/CategoryType'
-import CoverageChart from './components/CoverageChart'
+import InfoType from './components/small-charts-components/InfoType'
+import CategoryType from './components/small-charts-components/CategoryType'
+import CoverageChart from './components/small-charts-components/CoverageChart'
+import TypeCount from './components/small-charts-components/TypeCount'
 
 // Styles
 import './styles/App.css';
@@ -121,7 +122,7 @@ function App() {
             <CoverageChart sources={sources}/>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Paper className={classes.paper}>count types horizontal</Paper>
+            <TypeCount data={data}/>
           </Grid>
           <Grid item xs={12} sm={4}>
             <Paper className={classes.paper}>count categories horizontal</Paper>

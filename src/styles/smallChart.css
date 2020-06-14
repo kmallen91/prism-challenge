@@ -1,4 +1,4 @@
-.info-type-container{
+.small-chart-container{
     margin: 0rem 7rem 0rem 7rem;
     width:100%;
     padding: 2rem 0rem 3rem 0rem;
@@ -6,7 +6,7 @@
     border: solid rgba(128, 128, 128, 0.151) 1px;
 }
 
-.info-type-title{
+.small-chart-title{
     font-size: 1.2rem;
     color:rgba(0, 0, 0, 0.678);
     width: 75%;
