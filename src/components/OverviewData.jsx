@@ -9,9 +9,11 @@ export default function OverviewData(props) {
     
     return (
         <div className='overview-data-container'>
-            <div className='issues-container'>Security Issues Resolved 
-                <br/> 
-                {sources  ? sources.reduce((acc, source) => {return source.resolved + acc}, 0) : (<h4>Loading..</h4>)} 
+            <div className='issues-container'>
+                <div className='issues-title'> Security Issues Resolved </div> 
+                <div className='issues-number'> 
+                {sources  ?  sources.reduce((acc, source) => {return source.resolved + acc}, 0) : (<h4>Loading..</h4>)} 
+                </div>
             </div>
             <div className='inspection-container'>Inspection Coverage                
                 {sources  ? <CoverageReducer sources ={sources}/> : (<h4>Loading..</h4>)}

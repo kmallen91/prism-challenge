@@ -13,18 +13,29 @@ export default function CoverageReducer(props) {
 
         return (
             <div className='inspection-data'>
-                <div className='inspection-db-container'> 
-                    {dbCoverage} / {dbTotal} 
+                <div className='inspection-info-container'> 
+                <div className='inspection-number-container'>
+                        <div className='inspection-number'> {dbCoverage} </div> 
+                        <div className='inspection-total'> / {dbTotal} </div> 
+                </div>        
                     <img />
                     <div className='inspection-db-label'> Databases </div>
                 </div>
-                <div className='inspection-table-container'> 
-                <div className='inspection-tables-number'> {tableCoverage} / {tableTotal} </div>
+                <div className='inspection-info-container'> 
+                    <div className='inspection-tables-number'>
+                    <div className='inspection-number-container'>
+                        <div className='inspection-number'> {tableCoverage} </div> 
+                        <div className='inspection-total'> / {tableTotal} </div> 
+                    </div>    
+                    </div>
                     <img />
                     <div className='inspection-tables-label'> Tables </div> 
                 </div>
-                <div className='inspection-file-container'> 
-                    {fileCoverage} / {fileTotal} 
+                <div className='inspection-info-container'>
+                    <div className='inspection-number-container'>
+                        <div className='inspection-number'> {fileCoverage} </div> 
+                        <div className='inspection-total'> / {fileTotal} </div> 
+                    </div> 
                     <img />
                     <div className='inspection-files-label'> Files </div>
                 </div>
