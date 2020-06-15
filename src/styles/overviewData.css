@@ -16,6 +16,7 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
+    overflow:contain;
 }
 
 .issues-title{
@@ -31,9 +32,9 @@
 }
 
 .line-graph-img{
-  height: 50px;
-  width: 150px; 
-  margin-left:3rem;
+  height: 4vh;
+  width: 6vw; 
+  margin-left:3vw;
 }
 
 .inspection-container{
@@ -43,7 +44,7 @@
     border-left: solid rgba(128, 128, 128, 0.151) 1px;
     padding: 0.5rem 0 0 0;
     background-color: white;
-
+    overflow:contain;
 }
 .inspection-data{
     display:flex;
@@ -88,6 +89,7 @@
     border-top: solid #35acde 2px;
     border-left: solid rgba(128, 128, 128, 0.151) 1px;
     background-color: white;
+    
 }
 .locations-data-container{
     display:flex;
@@ -96,6 +98,7 @@
     margin: 0 auto;
     background-color: white;
     padding: 1rem 0 0 0 ;
+    overflow:contain;
 }
 .locations-title{
     padding: 0.5rem 0 0.5rem 0;
@@ -103,7 +106,7 @@
 }
 
 .locations-data{
-    padding: 0 1.5rem 0 1.5rem;
+    padding: 0 1rem 0 1rem;
     background-color: white;
 }
 

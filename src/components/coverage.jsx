@@ -1,6 +1,5 @@
 import React from 'react'
 import BarGraph from '../styles/prism-project-bar-graph-img.png'
-import { Bar } from '@nivo/bar'
 
 export default function CoverageReducer(props) {
     
@@ -18,7 +17,7 @@ export default function CoverageReducer(props) {
                 <div className='inspection-info-container'> 
                 <div className='inspection-number-container'>
                         <div className='inspection-number'> {dbCoverage} </div> 
-                        <div className='inspection-total'> / {dbTotal} </div> 
+                        <div className='inspection-total'> /{dbTotal} </div> 
                 </div>        
                     <img className='bar-graph-img' src={BarGraph} alt='bar graph image' />  
                     <div className='inspection-label'> Databases </div>

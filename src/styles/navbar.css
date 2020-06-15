@@ -27,6 +27,12 @@
     margin-right:2rem;
     text-decoration: none;
     }
+.dashboard:active{
+    padding: 1.25rem 6rem 1rem 1rem;
+    margin-right:2rem;
+    text-decoration: none;
+    border-bottom: solid #35acde 2px;
+    }
 
 .logo {
     height: 70%;
