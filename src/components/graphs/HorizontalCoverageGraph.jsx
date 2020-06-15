@@ -35,6 +35,7 @@ const HorizontalGraph = (props) => (
             legendOffset: -40
         }}
         enableLabel={false}
+        // gridYValues={[1,2,3,4,5,6,7]}
         labelSkipWidth={12}
         labelSkipHeight={12}
         labelTextColor={{ from: 'color', modifiers: [ [ 'darker', 1.6 ] ] }}

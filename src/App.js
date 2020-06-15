@@ -16,6 +16,7 @@ import CoverageChart from './components/small-charts-components/CoverageChart'
 import TypeCount from './components/small-charts-components/TypeCount'
 import CategoryCount from './components/small-charts-components/CategoryCount'
 import RecordCount from './components/small-charts-components/RecordCount'
+import Notifications from './components/Notifications'
 
 // Styles
 import './styles/App.css';
@@ -113,7 +114,7 @@ function App() {
             <DataDistribution sources={sources} info={info} data={data}/>          
           
           
-            <div className='notifications-container'>notifications</div>
+            <Notifications />
           
           
             <InfoType data={data} info={info} />

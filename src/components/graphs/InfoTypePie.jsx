@@ -22,8 +22,8 @@ const MyResponsivePie = (props) => (
         radialLabelsTextXOffset={3}
         radialLabelsTextColor="#333333"
         radialLabelsLinkOffset={-9}
-        radialLabelsLinkDiagonalLength={13}
-        radialLabelsLinkHorizontalLength={20}
+        radialLabelsLinkDiagonalLength={16}
+        radialLabelsLinkHorizontalLength={24}
         radialLabelsLinkStrokeWidth={1}
         radialLabelsLinkColor={{ from: 'color' }}
         enableSlicesLabels={false}

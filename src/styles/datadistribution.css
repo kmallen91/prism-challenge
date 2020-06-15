@@ -4,6 +4,7 @@
     padding: 1rem 0rem 3rem 0rem;
     height:22rem;
     border: solid rgba(128, 128, 128, 0.151) 1px;
+    background-color: white;
 }
 
 .stacked-graph-title{
