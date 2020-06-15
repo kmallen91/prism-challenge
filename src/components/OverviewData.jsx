@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/overviewData.css'
+import LineGraph from '../styles/prism-project-line-graph-img.png'
 import CoverageReducer from './coverage'
 import DataLocations from './DataLocations'
 
@@ -14,6 +15,7 @@ export default function OverviewData(props) {
                 <div className='issues-number'> 
                 {sources  ?  sources.reduce((acc, source) => {return source.resolved + acc}, 0) : (<h4>Loading..</h4>)} 
                 </div>
+                <img className='line-graph-img' src={LineGraph} alt='line graph img' />
             </div>
             <div className='inspection-container'>Inspection Coverage                
                 {sources  ? <CoverageReducer sources ={sources}/> : (<h4>Loading..</h4>)}

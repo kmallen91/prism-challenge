@@ -1,4 +1,6 @@
 import React from 'react'
+import BarGraph from '../styles/prism-project-bar-graph-img.png'
+import { Bar } from '@nivo/bar'
 
 export default function CoverageReducer(props) {
     
@@ -18,7 +20,7 @@ export default function CoverageReducer(props) {
                         <div className='inspection-number'> {dbCoverage} </div> 
                         <div className='inspection-total'> / {dbTotal} </div> 
                 </div>        
-                    <img />
+                    <img className='bar-graph-img' src={BarGraph} alt='bar graph image' />  
                     <div className='inspection-label'> Databases </div>
                 </div>
                 <div className='inspection-info-container'> 
@@ -28,7 +30,7 @@ export default function CoverageReducer(props) {
                         <div className='inspection-total'> / {tableTotal} </div> 
                     </div>    
                     </div>
-                    <img />
+                    <img className='bar-graph-img' src={BarGraph} alt='bar graph image' />
                     <div className='inspection-label'> Tables </div> 
                 </div>
                 <div className='inspection-info-container'>
@@ -36,7 +38,7 @@ export default function CoverageReducer(props) {
                         <div className='inspection-number'> {fileCoverage} </div> 
                         <div className='inspection-total'> / {fileTotal} </div> 
                     </div> 
-                    <img />
+                    <img className='bar-graph-img' src={BarGraph} alt='bar graph image' />
                     <div className='inspection-label'> Files </div>
                 </div>
             </div>

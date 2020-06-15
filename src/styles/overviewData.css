@@ -2,8 +2,8 @@
     width: 89%;
     display:flex;
     justify-content: space-between;
-    padding: 0rem 0rem 2rem 0rem;
-    margin: 2rem 0rem 0rem 5.8rem;
+    padding: 0rem 0rem 1rem 0rem;
+    margin: 2rem 0rem 1rem 5.8rem;
     border: solid rgba(128, 128, 128, 0.151) 1px;
     background-color: white;
 }
@@ -13,6 +13,9 @@
     width:17%;
     border-top: solid #35acde 2px;
     background-color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .issues-title{
@@ -25,6 +28,12 @@
     color:#35acde;
     font-size: 22px;
     background-color: white;
+}
+
+.line-graph-img{
+  height: 50px;
+  width: 150px; 
+  margin-left:3rem;
 }
 
 .inspection-container{
@@ -66,6 +75,11 @@
 .inspection-label{
     color: rgba#797979;
     font-size: 10px;
+}
+
+.bar-graph-img{
+  height: 6px;
+  width: 89px; 
 }
 
 .locations-container{
