@@ -31,9 +31,7 @@
     background-color: white;
 }
 .tabs-panel{
-    background-color: white;
-    
-   
+    background-color: white;   
 }
 .tabs-info{
     background-color: #f4fafd;
@@ -45,24 +43,69 @@
     background-color: #f4fafd;
     margin: 0.5rem 0 0 0 ;
     font-size:1.2rem;
-
+    display:flex;
+}
+.notif-circle{
+    margin: 0 0 0 0.5rem;
+    color: white;
+    font-size:9px;
+    text-align: center;
+    border-radius:40%;
+    background-color: #e97150;
+    height: 13px;
+    width: 20px;
+}
+.security-circle{
+    margin: 0 0.5rem 0 0.5rem;
+    color: white;
+    font-size:9px;
+    text-align: center;
+    border-radius:50%;
+    background-color: #e97150;
+    height: 12px;
+    width: 12px;
+}
+.bell-img{
+    margin: 0 0.5rem 0 0.5rem;
+    color: white;
+    font-size:9px;
+    text-align: center;
+    border-radius:50%;
+    background-color: #f4fafd;
+    height: 12px;
+    width: 12px;
+}
+.info-circle{
+    margin: 0 0.5rem 0 0.5rem;
+    color: white;
+    font-size:9px;
+    text-align: center;
+    border-radius:50%;
+    background-color: #35acde;
+    height: 12px;
+    width: 12px;
 }
 .tabs-info-time{
     background-color: #f4fafd;
     font-size: 0.7rem;
+    padding-left: 2rem 
 }
 .tabs-info-content{
     background-color: #f4fafd;
     font-size: 0.85rem;
-
+    padding-left: 2rem 
+}
+.tabs-info-content-old{
+    background-color: #ffffff;
 }
 
 .notifications-title{
     background-color: white;
     font-size:1.2rem;
     margin: 0;
-    padding: 0 0 0 1rem;
+    padding: 0 0.5rem 0 1rem;
     text-align: left;
+    display: flex;
 }
 
 .rwt__tab[aria-selected="false"]:hover,

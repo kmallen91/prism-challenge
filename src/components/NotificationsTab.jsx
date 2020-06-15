@@ -1,12 +1,16 @@
 import React from 'react';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
+import '../styles/notifications.css'
+import YellowBell from '../styles/simple-yellow-bell.png'
 
 
 export default function NotificationTabs() {
   return (
     <div className='notifications-container'>
-    <h4 className='notifications-title'>Notifications</h4>
+    <h4 className='notifications-title'>Notifications
+    <div className='notif-circle'>3</div>
+    </h4>
     <Tabs    
     defaultTab="one"
     onChange={(tabId) => { console.log(tabId) }}
@@ -19,19 +23,31 @@ export default function NotificationTabs() {
     </TabList>
     <TabPanel className='tabs-panel' tabId="one">
       <div className='tabs-info'>
-          <h4 className='tabs-info-title'>Security Threat</h4>
+          <h4 className='tabs-info-title'>
+          <div className='security-circle'>!</div>
+          Security Threat
+           </h4>            
           <p className='tabs-info-time'>3 hours ago</p>
           <p className='tabs-info-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
       </div>
       <div className='tabs-info'>
-          <h4 className='tabs-info-title'>New Sensitive Data</h4>
+          <h4 className='tabs-info-title'>
+              <img src={YellowBell} className='bell-img' alt='simple yellow bell' />
+              New Sensitive Data</h4>
           <p className='tabs-info-time'>3 hours ago</p>
           <p className='tabs-info-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
       </div>
       <div className='tabs-info'>
-          <h4 className='tabs-info-title'>New Sensitive Data</h4>
+          <h4 className='tabs-info-title'>
+          <div className='info-circle'>i</div>
+              New Sensitive Data</h4>
           <p className='tabs-info-time'>3 hours ago</p>
           <p className='tabs-info-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      </div>
+      <div className='tabs-info tabs-info-content-old'>
+          <h4 className='tabs-info-title tabs-info-content-old'>Old Sensitive Data</h4>
+          <p className='tabs-info-time tabs-info-content-old'>12 hours ago</p>
+          <p className='tabs-info-content tabs-info-content-old'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
       </div>
 
     </TabPanel>
