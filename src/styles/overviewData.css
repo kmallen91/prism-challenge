@@ -46,6 +46,11 @@
     background-color: white;
     overflow:contain;
 }
+
+.inspection-info-container{
+    padding: 0 0.5vw 0 0.5vw;
+}
+
 .inspection-data{
     display:flex;
     justify-content: center;
