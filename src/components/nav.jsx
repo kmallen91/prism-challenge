@@ -34,7 +34,7 @@ export default function Navbar() {
                 </NavLink>
                 </li>
             </ul>
-            <div className='nav-item'>User001</div>
+            <div className='nav-item user-info'>User001</div>
         </div>
     )
 }

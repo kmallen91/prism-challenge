@@ -33,6 +33,10 @@
     color:#ABABAB;
     }
 
+.user-info{
+    color:#272833;
+}
+
 .active{
     border-bottom: solid #35acde 3px;
     color:#444444;
