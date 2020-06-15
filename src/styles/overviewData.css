@@ -1,7 +1,10 @@
 .overview-data-container{
+    width: 89%;
     display:flex;
     justify-content: space-evenly;
-    padding: 2rem 0rem 2rem 0rem;
+    padding: 0rem 0rem 2rem 0rem;
+    margin: 2rem 0rem 0rem 5.8rem;
+    border: solid rgba(128, 128, 128, 0.151) 1px;
 }
 
 .issues-container{
@@ -9,7 +12,39 @@
 }
 .inspection-container{
     color: rgba(0, 0, 0, 0.64);
+    width:40%;
+    border: solid rgba(128, 128, 128, 0.151) 1px;
+
+}
+.inspection-data{
+    display:flex;
+    justify-content: center;
+    width:90%;
 }
 .locations-container{
     color: rgba(0, 0, 0, 0.64);
+    width:30%;
+    border-top: solid #35acde 2px;
+    border-left: solid rgba(128, 128, 128, 0.151) 1px;
+}
+.locations-data-container{
+    display:flex;
+    justify-content: center;
+    width:90%;
+    margin: 0 auto;
+}
+.locations-title{
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.locations-data{
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.locations-number{
+    color:#35acde;
+    font-size:22px;
+}
+.locations-label{
+    font-size: 10px;
 }

@@ -5,7 +5,7 @@
     padding: 1rem 0rem 5rem 0rem;
     height:20rem;
     border: solid rgba(128, 128, 128, 0.151) 1px;
-    overflow: scroll;
+    overflow: auto;
 }
 .notifications-container::-webkit-scrollbar {
     width: 2px;

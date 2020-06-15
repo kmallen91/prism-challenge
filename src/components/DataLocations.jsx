@@ -26,12 +26,24 @@ export default function DataLocations(props) {
         })
 
         return (
-            <>
-            <div> {files} Files </div>
-            <div> {sources} Data Sources </div>
-            <div> {tables} Tables </div>
-            <div> {databases} Databases </div>
-            </>
+            <div className='locations-data-container'>
+                <div className='locations-data'> 
+                    <div className='locations-number'> {files} </div> 
+                    <div className='locations-label'> Files </div>
+                </div>
+                <div className='locations-data'> 
+                   <div className='locations-number'> {sources} </div> 
+                   <div className='locations-label'> Data Sources </div> 
+                </div>
+                <div className='locations-data'> 
+                    <div className='locations-number'> {tables} </div> 
+                    <div className='locations-label'> Tables </div>  
+                </div>
+                <div className='locations-data'> 
+                    <div className='locations-number'> {databases} </div> 
+                    <div className='locations-label'> Databases </div>
+                </div>
+            </div>
         )
     }
 

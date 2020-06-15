@@ -12,11 +12,23 @@ export default function CoverageReducer(props) {
         const tableCoverage = props.sources.reduce((acc, source) => {return source.table_coverage + acc}, 0)
 
         return (
-            <>
-            <div> {dbCoverage} / {dbTotal} Databases </div>
-            <div> {tableCoverage} / {tableTotal} Tables </div>
-            <div> {fileCoverage} / {fileTotal} Files </div>
-            </>
+            <div className='inspection-data'>
+                <div className='inspection-db-container'> 
+                    {dbCoverage} / {dbTotal} 
+                    <img />
+                    <div className='inspection-db-label'> Databases </div>
+                </div>
+                <div className='inspection-table-container'> 
+                <div className='inspection-tables-number'> {tableCoverage} / {tableTotal} </div>
+                    <img />
+                    <div className='inspection-tables-label'> Tables </div> 
+                </div>
+                <div className='inspection-file-container'> 
+                    {fileCoverage} / {fileTotal} 
+                    <img />
+                    <div className='inspection-files-label'> Files </div>
+                </div>
+            </div>
         )
     }
 }

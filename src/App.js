@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
 
 
 // Components
 import Navbar from './components/nav'
 import Overview from './components/overview'
-import OverviewData from './components/overview-data'
+import OverviewData from './components/OverviewData'
 import DataDistribution from './components/DataDistribution'
 import InfoType from './components/small-charts-components/InfoType'
 import CategoryType from './components/small-charts-components/CategoryType'
@@ -23,23 +20,12 @@ import './styles/App.css';
 import './styles/notifications.css'
 
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-}));
 
 // create DS objects containing each type, category, and count for each data source
 // loop through info and tally all where source_id == data source #
 
 function App() {
 
-  const classes = useStyles()
   const [sources, setSources] = useState()
   const [info, setInfo] = useState()
 
