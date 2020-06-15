@@ -19,7 +19,7 @@ export default function CoverageReducer(props) {
                         <div className='inspection-total'> / {dbTotal} </div> 
                 </div>        
                     <img />
-                    <div className='inspection-db-label'> Databases </div>
+                    <div className='inspection-label'> Databases </div>
                 </div>
                 <div className='inspection-info-container'> 
                     <div className='inspection-tables-number'>
@@ -29,7 +29,7 @@ export default function CoverageReducer(props) {
                     </div>    
                     </div>
                     <img />
-                    <div className='inspection-tables-label'> Tables </div> 
+                    <div className='inspection-label'> Tables </div> 
                 </div>
                 <div className='inspection-info-container'>
                     <div className='inspection-number-container'>
@@ -37,7 +37,7 @@ export default function CoverageReducer(props) {
                         <div className='inspection-total'> / {fileTotal} </div> 
                     </div> 
                     <img />
-                    <div className='inspection-files-label'> Files </div>
+                    <div className='inspection-label'> Files </div>
                 </div>
             </div>
         )
