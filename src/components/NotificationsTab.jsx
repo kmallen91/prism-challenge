@@ -3,6 +3,7 @@ import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 import '../styles/notifications.css'
 import YellowBell from '../styles/simple-yellow-bell.png'
+import Clock from '../styles/basic-clock-icon.png'
 
 
 export default function NotificationTabs() {
@@ -27,26 +28,35 @@ export default function NotificationTabs() {
           <div className='security-circle'>!</div>
           Security Threat
            </h4>            
-          <p className='tabs-info-time'>3 hours ago</p>
+          <p className='tabs-info-time'>
+            <img src={Clock} className='clock-img' alt='clock icon' />    
+              3 hours ago
+              </p>
           <p className='tabs-info-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
       </div>
       <div className='tabs-info'>
           <h4 className='tabs-info-title'>
               <img src={YellowBell} className='bell-img' alt='simple yellow bell' />
               New Sensitive Data</h4>
-          <p className='tabs-info-time'>3 hours ago</p>
+          <p className='tabs-info-time'>
+            <img src={Clock} className='clock-img' alt='clock icon' />   
+              3 hours ago</p>
           <p className='tabs-info-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
       </div>
       <div className='tabs-info'>
           <h4 className='tabs-info-title'>
           <div className='info-circle'>i</div>
               New Sensitive Data</h4>
-          <p className='tabs-info-time'>3 hours ago</p>
+          <p className='tabs-info-time'>
+            <img src={Clock} className='clock-img' alt='clock icon' />   
+              3 hours ago</p>
           <p className='tabs-info-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
       </div>
       <div className='tabs-info tabs-info-content-old'>
           <h4 className='tabs-info-title tabs-info-content-old'>Old Sensitive Data</h4>
-          <p className='tabs-info-time tabs-info-content-old'>12 hours ago</p>
+          <p className='tabs-info-time tabs-info-content-old'>
+            <img src={Clock} className='clock-img' alt='clock icon' />   
+              12 hours ago</p>
           <p className='tabs-info-content tabs-info-content-old'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
       </div>
 
