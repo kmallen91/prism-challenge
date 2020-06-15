@@ -19,7 +19,7 @@ export default function CoverageReducer(props) {
                         <div className='inspection-number'> {dbCoverage} </div> 
                         <div className='inspection-total'> /{dbTotal} </div> 
                 </div>        
-                    <img className='bar-graph-img' src={BarGraph} alt='bar graph image' />  
+                    <img className='bar-graph-img' src={BarGraph} alt='bar graph image1' />  
                     <div className='inspection-label'> Databases </div>
                 </div>
                 <div className='inspection-info-container'> 
@@ -29,7 +29,7 @@ export default function CoverageReducer(props) {
                         <div className='inspection-total'> / {tableTotal} </div> 
                     </div>    
                     </div>
-                    <img className='bar-graph-img' src={BarGraph} alt='bar graph image' />
+                    <img className='bar-graph-img' src={BarGraph} alt='bar graph image2' />
                     <div className='inspection-label'> Tables </div> 
                 </div>
                 <div className='inspection-info-container'>
@@ -37,7 +37,7 @@ export default function CoverageReducer(props) {
                         <div className='inspection-number'> {fileCoverage} </div> 
                         <div className='inspection-total'> / {fileTotal} </div> 
                     </div> 
-                    <img className='bar-graph-img' src={BarGraph} alt='bar graph image' />
+                    <img className='bar-graph-img' src={BarGraph} alt='bar graph image3' />
                     <div className='inspection-label'> Files </div>
                 </div>
             </div>
