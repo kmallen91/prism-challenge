@@ -39,7 +39,7 @@ export default function CategoryType(props) {
     return (
         <div className='small-chart-container'>
             <h2 className='small-chart-title'>Sensitive Info by Category</h2>
-            <h4 className='small-chart-subtitle'>Count of Data Sources</h4>
+            <h4 className='small-chart-subtitle'>(Count of Data Sources)</h4>
             <MyResponsivePie data={pieChartObject}/>
         </div>
     )

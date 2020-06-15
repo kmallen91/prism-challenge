@@ -21,7 +21,7 @@ const HorizontalRecordCount = (props) => (
             tickSize: 0,
             tickPadding: 5,
             tickRotation: 0,
-            legend: '(Inspection Coverage (%) )',
+            legend: '(Count - Records/Rows Containing Sensitive Info)',
             legendPosition: 'middle',
             legendOffset: 32
         }}

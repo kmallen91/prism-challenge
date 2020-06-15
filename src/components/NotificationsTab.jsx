@@ -18,7 +18,22 @@ export default function NotificationTabs() {
       <Tab className='tabs' tabFor="four">Info</Tab>
     </TabList>
     <TabPanel className='tabs-panel' tabId="one">
-      <p className='tabs-info'>Tab 1 content</p>
+      <div className='tabs-info'>
+          <h4 className='tabs-info-title'>Security Threat</h4>
+          <p className='tabs-info-time'>3 hours ago</p>
+          <p className='tabs-info-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      </div>
+      <div className='tabs-info'>
+          <h4 className='tabs-info-title'>New Sensitive Data</h4>
+          <p className='tabs-info-time'>3 hours ago</p>
+          <p className='tabs-info-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      </div>
+      <div className='tabs-info'>
+          <h4 className='tabs-info-title'>New Sensitive Data</h4>
+          <p className='tabs-info-time'>3 hours ago</p>
+          <p className='tabs-info-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      </div>
+
     </TabPanel>
     <TabPanel className=' tabs-panel' tabId="two">
       <p className='tabs-info'>Random Info</p>
