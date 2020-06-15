@@ -11,22 +11,22 @@ export default function Navbar() {
             <ul className='nav-list'>
                 <li className='logo'> <img className='logo-image'  src={logo} alt='datatonic logo' /></li>
                 <li>
-                <NavLink to="/dashboard" className='nav-item'>
+                <NavLink to="/dashboard" className='nav-item dashboard' activeClassName='active'>
                     Dashboard
                 </NavLink>
                 </li>
                 <li>
-                <NavLink to="/sources" className='nav-item'>
+                <NavLink to="/sources" className='nav-item' activeClassName='active'>
                     Sources
                 </NavLink>
                 </li>
                 <li>
-                <NavLink to="/inspector" className='nav-item'>
+                <NavLink to="/inspector" className='nav-item' activeClassName='active'>
                     Inspector
                 </NavLink>
                 </li>
                 <li>
-                <NavLink to="/ingestion" className='nav-item'>
+                <NavLink to="/ingestion" className='nav-item' activeClassName='active'>
                     Ingestion
                 </NavLink>
                 </li>
